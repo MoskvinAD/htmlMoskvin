@@ -1,0 +1,61 @@
+
+body { 
+    background-color: #c7b39b; /* Цвет фона */
+}
+
+.img-indent
+{
+text-align:left;
+}
+h2
+{
+text-align:left;
+color: white;
+}
+.wrapper { 
+	width:100%;
+	overflow:hidden;
+color: white;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 30px;
+color: white;
+	
+}
+	
+.pad {
+	
+text-align:left;
+color: white;
+}
+
+
+			
+a.button {
+  display: inline-block;
+  background: #050400;
+  color: #fff;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 100;
+}
+
+div {
+  margin: 24px;
+  text-align: center;
+}
+.quizsection{
+float:left;/* Положение справа */
+
+}
+.border_style_dashed{
+	border: 2px dashed #1E90FF;
+	padding: 3px;
+	margin-bottom: 5px;
+}

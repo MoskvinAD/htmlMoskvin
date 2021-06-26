@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+    function myFunction() {
+    	let arr = ["Яблоко", "Апельсин", "Слива"];
+		document.write(arr[0] + " " + arr[1] + " " + arr[2]);
+		document.write('<br>');
+		var arr2 = [];
+		for ( i = 0; i < 10; i++ ) {
+    	arr2.push( Math.round( Math.random() * 100 ));
+			} document.write( arr2 + " ");
+    	//}
+
+    	
+   		//var arr3 = []; 
+    	//for(var i=0; i < 2; i++) {
+       // while(
+       //   typeof (arr3[i] = prompt('Введите любое имя №'+i)) != 'string' || arr3[i].length == 0
+       // );
+       // document.write(arr3); 
+        document.write('<br>');
+    }
+    let arr = ["Яблоко", "Апельсин", "Слива","Персик","Киви"];
+    let arr2 = ["Иван", "Олег", "Ирина","Сашок","Слава"];
+    function myFunction2() {
+		document.write(arr[4]);
+		document.write('<br>');
+		arr[4] = prompt('Введите любое значение');
+		document.write(arr[4]);
+    }
+    function WriteArr() {
+    	document.write('<br>');
+    	for (var i = 0; i < arr.length; i++) {
+    		document.write(arr[i] + " ");
+    	}	
+    }
+    function WriteTyArr() {
+    	document.write('<br>');
+    	var namesAll = [].concat(arr, arr2);
+    	document.write(namesAll);
+    }
+    function addElementArr() {
+    	document.write('<br>');	
+    	var namesAll = [].concat(arr, arr2);
+    	namesAll.push('Сидоров');
+    	document.write(namesAll);
+    }
+  	function getMonth(date) {
+    let days = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+    return days[date.getMonth()];
+  	}
+     function GetDate() {
+    	var now = new Date(); 
+    	document.write(now);
+    }
+    function GetDateExt() {
+    	var now = new Date(); 
+    	document.write(now.getDay() + " " 
+    		+ getMonth(now) + " "
+    		+ now.getFullYear());
+    }
+    function getRandomInt(max) {
+ 	 	return Math.floor(Math.random() * max);
+	}
+    function MultPl(){
+    	var a = getRandomInt(40);
+    	var b = getRandomInt(40);
+    	var c = a * b;
+    	document.write(c);
+    }
+</script>
+
+</head>
+<body>
+<button type="button" onclick="myFunction()">Массивы</button>
+<br>
+<button type="button" onclick="myFunction2()">5-й элемент</button>
+<br>
+<button type="button" onclick="WriteArr()">Выводим массив</button>
+<br>
+<button type="button" onclick="WriteTyArr()">Два массива</button>
+<br>
+<button type="button" onclick="addElementArr()">Добавим элемент</button>
+<br>
+<button type="button" onclick="GetDate()">Получить текущию дату</button>
+<br>
+<button type="button" onclick="GetDateExt()">Получить текущию дату в красивом формате</button>
+<br>
+<button type="button" onclick="MultPl()">Перемножим два случайых числа</button>
+
+
+
+</body>
+</html>
